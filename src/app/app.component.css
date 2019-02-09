@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+.header {
+  margin: 0 auto;
+  width: 320px;
+  border: 4px solid black;
+  border-radius: 20px;
+  background: #E0E0E0;
+}
+
+.calculator {
+  width: 415px;
+  height: 400px;
+  margin: 70px auto;
+  border: 4px solid black;
+  border-radius: 30px;
+  background: white;
+}

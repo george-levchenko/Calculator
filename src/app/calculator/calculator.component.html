@@ -1,0 +1,58 @@
+<div class="logger">
+
+  <div class="inside-logger">
+    <div class="log" *ngFor="let log of logs"> {{log}} </div>
+  </div>
+
+</div>
+
+<div class="input">
+  <input type="text" (keyup)="getInputValue($event)" [(ngModel)]="inputValue" autofocus placeholder="Waiting for Numbers!">
+</div>
+
+<div class="buttons">
+
+  <div class="left-side">
+
+      <div class="calculator-button" (click)="getAnswer()">=</div>
+      <div class="calculator-button" (click)="backupValue()">C</div>
+      <div class="calculator-button" (click)="clearValue()">CE</div>
+
+      <div class="calculator-button" (click)="getButtonNumber('7')">7</div>
+      <div class="calculator-button" (click)="getButtonNumber('8')">8</div>
+      <div class="calculator-button" (click)="getButtonNumber('9')">9</div>
+
+      <div class="calculator-button" (click)="getButtonNumber('4')">4</div>
+      <div class="calculator-button" (click)="getButtonNumber('5')">5</div>
+      <div class="calculator-button" (click)="getButtonNumber('6')">6</div>
+
+      <div class="calculator-button" (click)="getButtonNumber('1')">1</div>
+      <div class="calculator-button" (click)="getButtonNumber('2')">2</div>
+      <div class="calculator-button" (click)="getButtonNumber('3')">3</div>
+
+      <div class="calculator-button" (click)="getButtonNumber('0')">0</div>
+      <div class="calculator-button" (click)="getButtonNumber('.')">.</div>
+      <div class="calculator-button" (click)="changeSign()">+/-</div>
+
+  </div>
+
+  <div class="right-side">
+
+      <div class="calculator-button" (click)="getPercent()">%</div>
+      <div class="calculator-button" (click)="getSquareRoot()">√</div>
+
+      <div class="calculator-button" (click)="getButtonOperator(' / ')">/</div>
+      <div class="calculator-button in-power-button" (click)="getDouble()">  x<sup>2</sup>  </div>
+
+       <div class="calculator-button" (click)="getButtonOperator(' x ')">x</div>
+      <div class="calculator-button" (click)="getFactorial()">x!</div>
+
+      <div class="calculator-button" (click)="getButtonOperator(' - ')">-</div>
+      <div class="calculator-button" (click)="getLog10()">log</div>
+
+      <div class="calculator-button" (click)="getButtonOperator(' + ')">+</div>
+      <div class="calculator-button" (click)="getLog()">ln</div>
+
+  </div>
+
+</div>
